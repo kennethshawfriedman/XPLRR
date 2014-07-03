@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B91760ED1965016600078379 /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B91760EC1965016600078379 /* MainVC.m */; };
+		B91760F01965018C00078379 /* InfiniteView.m in Sources */ = {isa = PBXBuildFile; fileRef = B91760EF1965018C00078379 /* InfiniteView.m */; };
 		B99E6C361964BD3B0074DA1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B99E6C351964BD3B0074DA1F /* Foundation.framework */; };
 		B99E6C381964BD3B0074DA1F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B99E6C371964BD3B0074DA1F /* CoreGraphics.framework */; };
 		B99E6C3A1964BD3B0074DA1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B99E6C391964BD3B0074DA1F /* UIKit.framework */; };
@@ -32,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B91760EB1965016600078379 /* MainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
+		B91760EC1965016600078379 /* MainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+		B91760EE1965018C00078379 /* InfiniteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteView.h; sourceTree = "<group>"; };
+		B91760EF1965018C00078379 /* InfiniteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteView.m; sourceTree = "<group>"; };
 		B99E6C321964BD3B0074DA1F /* XPLRR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XPLRR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B99E6C351964BD3B0074DA1F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B99E6C371964BD3B0074DA1F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -109,6 +115,10 @@
 			children = (
 				B99E6C441964BD3B0074DA1F /* AppDelegate.h */,
 				B99E6C451964BD3B0074DA1F /* AppDelegate.m */,
+				B91760EB1965016600078379 /* MainVC.h */,
+				B91760EC1965016600078379 /* MainVC.m */,
+				B91760EE1965018C00078379 /* InfiniteView.h */,
+				B91760EF1965018C00078379 /* InfiniteView.m */,
 				B99E6C471964BD3B0074DA1F /* Images.xcassets */,
 				B99E6C3C1964BD3B0074DA1F /* Supporting Files */,
 			);
@@ -239,7 +249,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B91760ED1965016600078379 /* MainVC.m in Sources */,
 				B99E6C461964BD3B0074DA1F /* AppDelegate.m in Sources */,
+				B91760F01965018C00078379 /* InfiniteView.m in Sources */,
 				B99E6C421964BD3B0074DA1F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,6 +451,7 @@
 				B99E6C601964BD3B0074DA1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B99E6C611964BD3B0074DA1F /* Build configuration list for PBXNativeTarget "XPLRRTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +460,7 @@
 				B99E6C631964BD3B0074DA1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
