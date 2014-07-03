@@ -25,9 +25,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	
+}
+
+- (void) viewDidAppear:(BOOL)animated {
 	if (![[NSUserDefaults standardUserDefaults] objectForKey:@"notFirstTime"]) {
 		[self firstTimeSetup];
+		NSLog(@"SUP");
 		[[NSUserDefaults standardUserDefaults] setObject:@YES forKey:@"notFirstTime"];
 	}
 }
@@ -39,7 +42,11 @@
 
 - (void) firstTimeSetup {
 	SetupVC *setupVC = [[SetupVC alloc] init];
-	UIPopoverController *popC = [[UIPopoverController alloc] initWithContentViewController:setupVC];
+	setupVC.view.backgroundColor = [UIColor blackColor];
+	setupVC.modalPresentationStyle = UIModalPresentationFormSheet;
+	NSLog(@"NOW");
+	[self presentViewController:setupVC animated:YES completion:nil];
+	
 }
 
 @end
