@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B91760ED1965016600078379 /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B91760EC1965016600078379 /* MainVC.m */; };
 		B91760F01965018C00078379 /* InfiniteView.m in Sources */ = {isa = PBXBuildFile; fileRef = B91760EF1965018C00078379 /* InfiniteView.m */; };
+		B91760F719650C9C00078379 /* SetupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B91760F619650C9C00078379 /* SetupVC.m */; };
 		B99E6C361964BD3B0074DA1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B99E6C351964BD3B0074DA1F /* Foundation.framework */; };
 		B99E6C381964BD3B0074DA1F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B99E6C371964BD3B0074DA1F /* CoreGraphics.framework */; };
 		B99E6C3A1964BD3B0074DA1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B99E6C391964BD3B0074DA1F /* UIKit.framework */; };
@@ -38,6 +39,8 @@
 		B91760EC1965016600078379 /* MainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
 		B91760EE1965018C00078379 /* InfiniteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteView.h; sourceTree = "<group>"; };
 		B91760EF1965018C00078379 /* InfiniteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteView.m; sourceTree = "<group>"; };
+		B91760F519650C9C00078379 /* SetupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SetupVC.h; path = Setup/SetupVC.h; sourceTree = "<group>"; };
+		B91760F619650C9C00078379 /* SetupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SetupVC.m; path = Setup/SetupVC.m; sourceTree = "<group>"; };
 		B99E6C321964BD3B0074DA1F /* XPLRR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XPLRR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B99E6C351964BD3B0074DA1F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B99E6C371964BD3B0074DA1F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -80,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B91760F419650C5700078379 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				B91760F519650C9C00078379 /* SetupVC.h */,
+				B91760F619650C9C00078379 /* SetupVC.m */,
+			);
+			name = Setup;
+			sourceTree = "<group>";
+		};
 		B99E6C291964BD3B0074DA1F = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +131,7 @@
 				B91760EC1965016600078379 /* MainVC.m */,
 				B91760EE1965018C00078379 /* InfiniteView.h */,
 				B91760EF1965018C00078379 /* InfiniteView.m */,
+				B91760F419650C5700078379 /* Setup */,
 				B99E6C471964BD3B0074DA1F /* Images.xcassets */,
 				B99E6C3C1964BD3B0074DA1F /* Supporting Files */,
 			);
@@ -250,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B91760ED1965016600078379 /* MainVC.m in Sources */,
+				B91760F719650C9C00078379 /* SetupVC.m in Sources */,
 				B99E6C461964BD3B0074DA1F /* AppDelegate.m in Sources */,
 				B91760F01965018C00078379 /* InfiniteView.m in Sources */,
 				B99E6C421964BD3B0074DA1F /* main.m in Sources */,

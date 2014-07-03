@@ -1,5 +1,5 @@
 //
-//  MainVC.h
+//  SetupVC.h
 //  XPLRR
 //
 //  Created by Kenny Friedman on 7/2/14.
@@ -7,12 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "InfiniteView.h"
 
-@interface MainVC : UIViewController
+@interface SetupVC : UIViewController
 
-@property (nonatomic, retain) InfiniteView *iView;
-
-- (void) firstTimeSetup;
+@property (nonatomic, retain) UIScrollView *sView;
 
 @end
