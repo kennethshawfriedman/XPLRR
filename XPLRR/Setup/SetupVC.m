@@ -18,7 +18,11 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        _sView = [[UIScrollView alloc] initWithFrame:self.view.frame];
+		_welcomeLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, 768, 44)];
+		_welcomeLabel.textAlignment = NSTextAlignmentCenter;
+		_welcomeLabel.text = @"Welcome to XPLRR";
+		_welcomeLabel.font = [UIFont fontWithName:@"Futura-Medium" size:14.0];
+		[self.view addSubview:_welcomeLabel];
     }
     return self;
 }

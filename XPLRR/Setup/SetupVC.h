@@ -10,6 +10,7 @@
 
 @interface SetupVC : UIViewController
 
-@property (nonatomic, retain) UIScrollView *sView;
+@property (nonatomic, retain) UILabel *welcomeLabel;
+@property (nonatomic, retain) UIButton *allowLocation;
 
 @end
