@@ -18,11 +18,21 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-		_welcomeLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, 768, 44)];
+		_welcomeLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, 540, 88)];
 		_welcomeLabel.textAlignment = NSTextAlignmentCenter;
-		_welcomeLabel.text = @"Welcome to XPLRR";
-		_welcomeLabel.font = [UIFont fontWithName:@"Futura-Medium" size:14.0];
+		_welcomeLabel.text = @"Welcome to";
+		_welcomeLabel.font = [UIFont fontWithName:@"Futura-Medium" size:28.0];
 		[self.view addSubview:_welcomeLabel];
+		
+		_titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 88, 540, 88)];
+		_titleLabel.textAlignment = NSTextAlignmentCenter;
+		_titleLabel.text = @"XPLRR";
+		_titleLabel.font = [UIFont fontWithName:@"Futura-Medium" size:88.0];
+		[self.view addSubview:_titleLabel];
+		
+		
+		
+		
     }
     return self;
 }

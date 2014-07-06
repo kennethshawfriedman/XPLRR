@@ -11,6 +11,7 @@
 @interface SetupVC : UIViewController
 
 @property (nonatomic, retain) UILabel *welcomeLabel;
+@property (nonatomic, retain) UILabel *titleLabel;
 @property (nonatomic, retain) UIButton *allowLocation;
 
 @end
