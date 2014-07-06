@@ -14,4 +14,6 @@
 @property (nonatomic, retain) UILabel *titleLabel;
 @property (nonatomic, retain) UIButton *allowLocation;
 
+@property (nonatomic, retain) UILabel *clickToAllow;
+
 @end
