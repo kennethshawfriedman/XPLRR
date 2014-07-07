@@ -9,8 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
-@interface InfiniteView : UIView
+@interface InfiniteView : UIScrollView
 
-@property UIView *backgroundView;
 
 @end

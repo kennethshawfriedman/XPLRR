@@ -14,5 +14,6 @@
 @property (nonatomic, retain) InfiniteView *iView;
 
 - (void) firstTimeSetup;
+- (void) showInfiniteView;
 
 @end

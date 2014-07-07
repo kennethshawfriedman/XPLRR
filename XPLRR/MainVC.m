@@ -31,10 +31,13 @@
 	if (![[NSUserDefaults standardUserDefaults] objectForKey:@"notFirstTime"]) {
 		[self firstTimeSetup];
 		[[NSUserDefaults standardUserDefaults] setObject:@YES forKey:@"notFirstTime"];
-	} else {
-		_iView = [[InfiniteView alloc] initWithFrame:self.view.frame];
-		[self.view addSubview:_iView];
 	}
+	[self showInfiniteView];
+}
+
+- (void) showInfiniteView {
+	_iView = [[InfiniteView alloc] initWithFrame:CGRectMake(0, 0, 1024, 768)];
+	[self.view addSubview:_iView];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -14,7 +14,8 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
+        self.backgroundColor = [UIColor blueColor];
+		self setContentSize: CGSizeMake(1000, 1000)
     }
     return self;
 }
