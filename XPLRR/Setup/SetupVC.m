@@ -47,6 +47,11 @@
 		_allowLocation.frame = CGRectMake(120.0, 350.0, 300.0, 50.0);
 		[self.view addSubview:_allowLocation];
 		
+		_infoView = [[UITextView alloc] initWithFrame:CGRectMake(20, 400, 500, 100)];
+		_infoView.font = [UIFont fontWithName:@"Futura-Medium" size:20.0];
+		_infoView.textAlignment = NSTextAlignmentCenter;
+		[self.view addSubview:_infoView];
+		
     }
     return self;
 }
@@ -65,8 +70,62 @@
 }
 
 - (void) setupTwitter {
-	
-	//SLRequest *twitterAccount = [SLRequest requestForServiceType: SLServiceTypeTwitter requestMethod:SLRequestMethodGET URL:<#(NSURL *)#> parameters:<#(NSDictionary *)#>]
+	_acStore = [[ACAccountStore alloc] init];
+	if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]) {
+		ACAccountType *twitterAcount = [_acStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
+		
+		ACAccountType *twitterAccountType =
+		[_acStore accountTypeWithAccountTypeIdentifier:
+		 ACAccountTypeIdentifierTwitter];
+		
+		[_acStore requestAccessToAccountsWithType:twitterAccountType options:NULL completion:^(BOOL granted, NSError *error) {
+			if (granted) {
+				NSArray *twitterAccounts =
+				[_acStore accountsWithAccountType:twitterAccountType];
+				NSURL *url = [NSURL URLWithString:@"https://api.twitter.com/1.1/statuses/user_timeline.json"];
+				 NSDictionary *params = @{@"screen_name" : @"name",
+										  @"include_rts" : @"0",
+										  @"trim_user" : @"1",
+										  @"count" : @"1"};
+				 SLRequest *request = [SLRequest requestForServiceType:SLServiceTypeTwitter requestMethod:SLRequestMethodGET URL:url parameters:params];
+				 [request setAccount:[twitterAccounts lastObject]];
+				 
+				 [request performRequestWithHandler: ^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
+					  if (responseData) {
+						  if (urlResponse.statusCode >= 200 &&
+							  urlResponse.statusCode < 300) {
+							  
+							   NSError *jsonError;
+							   NSDictionary *timelineData =
+							   [NSJSONSerialization
+							   JSONObjectWithData:responseData
+							   options:NSJSONReadingAllowFragments error:&jsonError];
+							   if (timelineData) {
+								   NSLog(@"Timeline Response: %@\n", timelineData);
+							   }
+							   else {
+								  // Our JSON deserialization went awry
+								  NSLog(@"JSON Error: %@", [jsonError localizedDescription]);
+							  }
+						  }
+						  else {
+							  // The server did not respond ... were we rate-limited?
+							  NSLog(@"The response status code is %d",
+									urlResponse.statusCode);
+						  }
+					  }
+				  }];
+			 }
+			 else {
+				 // Access was not granted, or an error occurred
+				 NSLog(@"%@", [error localizedDescription]);
+			 }
+		 }];
+		
+		_infoView.text = @"";
+	} else {
+		_infoView.text = @"XPLRR needs access to your Twitter information. Please go to Settings on your iPad and log into Twitter";
+	}
 }
 
 
@@ -105,7 +164,7 @@
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
     NSLog(@"didUpdateToLocation: %@", newLocation);
     CLLocation *currentLocation = newLocation;
-
+	[_locationManager stopUpdatingLocation];
 }
 
 
