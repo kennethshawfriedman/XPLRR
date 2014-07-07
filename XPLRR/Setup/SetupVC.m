@@ -123,6 +123,7 @@
 		 }];
 		
 		_infoView.text = @"";
+		[self dismissViewControllerAnimated:YES completion:nil];
 	} else {
 		_infoView.text = @"XPLRR needs access to your Twitter information. Please go to Settings on your iPad and log into Twitter";
 	}
