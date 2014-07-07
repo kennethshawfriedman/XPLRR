@@ -57,7 +57,6 @@
 	locationManager.distanceFilter = kCLDistanceFilterNone;
 	locationManager.desiredAccuracy = kCLLocationAccuracyBest;
 	[locationManager startUpdatingLocation];
-	
 }
 
 - (void)viewDidLoad
