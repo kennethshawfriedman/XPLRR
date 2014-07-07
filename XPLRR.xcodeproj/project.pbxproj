@@ -13,6 +13,7 @@
 		B91760F91969430900078379 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91760F81969430900078379 /* CoreLocation.framework */; };
 		B91760FB196A907E00078379 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91760FA196A907E00078379 /* Social.framework */; };
 		B91760FD196ACB4500078379 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91760FC196ACB4500078379 /* Accounts.framework */; };
+		B91760FF196AE8BD00078379 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91760FE196AE8BD00078379 /* QuartzCore.framework */; };
 		B99E6C361964BD3B0074DA1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B99E6C351964BD3B0074DA1F /* Foundation.framework */; };
 		B99E6C381964BD3B0074DA1F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B99E6C371964BD3B0074DA1F /* CoreGraphics.framework */; };
 		B99E6C3A1964BD3B0074DA1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B99E6C391964BD3B0074DA1F /* UIKit.framework */; };
@@ -47,6 +48,7 @@
 		B91760F81969430900078379 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B91760FA196A907E00078379 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		B91760FC196ACB4500078379 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		B91760FE196AE8BD00078379 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B99E6C321964BD3B0074DA1F /* XPLRR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XPLRR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B99E6C351964BD3B0074DA1F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B99E6C371964BD3B0074DA1F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -70,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B91760FF196AE8BD00078379 /* QuartzCore.framework in Frameworks */,
 				B91760FD196ACB4500078379 /* Accounts.framework in Frameworks */,
 				B91760FB196A907E00078379 /* Social.framework in Frameworks */,
 				B91760F91969430900078379 /* CoreLocation.framework in Frameworks */,
@@ -123,6 +126,7 @@
 		B99E6C341964BD3B0074DA1F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B91760FE196AE8BD00078379 /* QuartzCore.framework */,
 				B91760FC196ACB4500078379 /* Accounts.framework */,
 				B91760FA196A907E00078379 /* Social.framework */,
 				B91760F81969430900078379 /* CoreLocation.framework */,

@@ -18,7 +18,7 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        _iView = [[InfiniteView alloc] initWithFrame:self.view.frame];
+        //_iView = [[InfiniteView alloc] initWithFrame:self.view.frame];
     }
     return self;
 }
@@ -30,10 +30,10 @@
 - (void) viewDidAppear:(BOOL)animated {
 	if (![[NSUserDefaults standardUserDefaults] objectForKey:@"notFirstTime"]) {
 		[self firstTimeSetup];
-		NSLog(@"SUP");
 		[[NSUserDefaults standardUserDefaults] setObject:@YES forKey:@"notFirstTime"];
 	} else {
-		[self firstTimeSetup];
+		_iView = [[InfiniteView alloc] initWithFrame:self.view.frame];
+		[self.view addSubview:_iView];
 	}
 }
 

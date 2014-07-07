@@ -72,11 +72,8 @@
 - (void) setupTwitter {
 	_acStore = [[ACAccountStore alloc] init];
 	if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]) {
-		ACAccountType *twitterAcount = [_acStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
 		
-		ACAccountType *twitterAccountType =
-		[_acStore accountTypeWithAccountTypeIdentifier:
-		 ACAccountTypeIdentifierTwitter];
+		ACAccountType *twitterAccountType = [_acStore accountTypeWithAccountTypeIdentifier: ACAccountTypeIdentifierTwitter];
 		
 		[_acStore requestAccessToAccountsWithType:twitterAccountType options:NULL completion:^(BOOL granted, NSError *error) {
 			if (granted) {
@@ -101,24 +98,24 @@
 							   JSONObjectWithData:responseData
 							   options:NSJSONReadingAllowFragments error:&jsonError];
 							   if (timelineData) {
-								   NSLog(@"Timeline Response: %@\n", timelineData);
+								   //NSLog(@"Timeline Response: %@\n", timelineData);
 							   }
 							   else {
 								  // Our JSON deserialization went awry
-								  NSLog(@"JSON Error: %@", [jsonError localizedDescription]);
+								  //NSLog(@"JSON Error: %@", [jsonError localizedDescription]);
 							  }
 						  }
 						  else {
 							  // The server did not respond ... were we rate-limited?
-							  NSLog(@"The response status code is %d",
-									urlResponse.statusCode);
+							  //NSLog(@"The response status code is %d",
+							  //		urlResponse.statusCode);
 						  }
 					  }
 				  }];
 			 }
 			 else {
 				 // Access was not granted, or an error occurred
-				 NSLog(@"%@", [error localizedDescription]);
+				 //NSLog(@"%@", [error localizedDescription]);
 			 }
 		 }];
 		
@@ -156,14 +153,14 @@
 #pragma mark - CLLocationManagerDelegate
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
-    NSLog(@"didFailWithError: %@", error);
+    //NSLog(@"didFailWithError: %@", error);
     UIAlertView *errorAlert = [[UIAlertView alloc]
 							   initWithTitle:@"Error" message:@"Failed to Get Your Location" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [errorAlert show];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
-    NSLog(@"didUpdateToLocation: %@", newLocation);
+    //NSLog(@"didUpdateToLocation: %@", newLocation);
     CLLocation *currentLocation = newLocation;
 	[_locationManager stopUpdatingLocation];
 }
