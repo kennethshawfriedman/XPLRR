@@ -66,6 +66,7 @@
 
 - (void) setupTwitter {
 	
+	//SLRequest *twitterAccount = [SLRequest requestForServiceType: SLServiceTypeTwitter requestMethod:SLRequestMethodGET URL:<#(NSURL *)#> parameters:<#(NSDictionary *)#>]
 }
 
 

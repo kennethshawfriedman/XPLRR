@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import <Social/Social.h>
+
 
 @interface SetupVC : UIViewController <CLLocationManagerDelegate>
 
