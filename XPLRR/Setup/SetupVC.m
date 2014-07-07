@@ -52,11 +52,20 @@
 }
 
 - (void) allowServices {
+	[self setupLocation];
+	[self setupTwitter];
+}
+
+- (void) setupLocation {
 	_locationManager = [[CLLocationManager alloc] init];
 	_locationManager.delegate = self;
 	_locationManager.distanceFilter = kCLDistanceFilterNone;
 	_locationManager.desiredAccuracy = kCLLocationAccuracyBest;
 	[_locationManager startUpdatingLocation];
+}
+
+- (void) setupTwitter {
+	
 }
 
 
