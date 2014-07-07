@@ -11,6 +11,8 @@
 
 @interface SetupVC : UIViewController <CLLocationManagerDelegate>
 
+@property (nonatomic, retain) CLLocationManager *locationManager;
+
 @property (nonatomic, retain) UILabel *welcomeLabel;
 @property (nonatomic, retain) UILabel *titleLabel;
 @property (nonatomic, retain) UIButton *allowLocation;

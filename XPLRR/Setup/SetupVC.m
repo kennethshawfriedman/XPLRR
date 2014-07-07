@@ -52,12 +52,13 @@
 }
 
 - (void) allowServices {
-	CLLocationManager *locationManager = [[CLLocationManager alloc] init];
-	locationManager.delegate = self;
-	locationManager.distanceFilter = kCLDistanceFilterNone;
-	locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-	[locationManager startUpdatingLocation];
+	_locationManager = [[CLLocationManager alloc] init];
+	_locationManager.delegate = self;
+	_locationManager.distanceFilter = kCLDistanceFilterNone;
+	_locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+	[_locationManager startUpdatingLocation];
 }
+
 
 - (void)viewDidLoad
 {
@@ -81,5 +82,21 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - CLLocationManagerDelegate
+
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
+    NSLog(@"didFailWithError: %@", error);
+    UIAlertView *errorAlert = [[UIAlertView alloc]
+							   initWithTitle:@"Error" message:@"Failed to Get Your Location" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [errorAlert show];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
+    NSLog(@"didUpdateToLocation: %@", newLocation);
+    CLLocation *currentLocation = newLocation;
+
+}
+
 
 @end
