@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface SetupVC : UIViewController
+@interface SetupVC : UIViewController <CLLocationManagerDelegate>
 
 @property (nonatomic, retain) UILabel *welcomeLabel;
 @property (nonatomic, retain) UILabel *titleLabel;
