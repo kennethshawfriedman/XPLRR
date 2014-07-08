@@ -14,6 +14,8 @@
 		B91760FB196A907E00078379 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91760FA196A907E00078379 /* Social.framework */; };
 		B91760FD196ACB4500078379 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91760FC196ACB4500078379 /* Accounts.framework */; };
 		B91760FF196AE8BD00078379 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91760FE196AE8BD00078379 /* QuartzCore.framework */; };
+		B96FBEB2196C915B007D773C /* retinaIcon10.png in Resources */ = {isa = PBXBuildFile; fileRef = B96FBEB1196C915B007D773C /* retinaIcon10.png */; };
+		B96FBEB4196C91EC007D773C /* retinaIcon10 nonRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = B96FBEB3196C91EC007D773C /* retinaIcon10 nonRetina.png */; };
 		B99E6C361964BD3B0074DA1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B99E6C351964BD3B0074DA1F /* Foundation.framework */; };
 		B99E6C381964BD3B0074DA1F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B99E6C371964BD3B0074DA1F /* CoreGraphics.framework */; };
 		B99E6C3A1964BD3B0074DA1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B99E6C391964BD3B0074DA1F /* UIKit.framework */; };
@@ -49,6 +51,8 @@
 		B91760FA196A907E00078379 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		B91760FC196ACB4500078379 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		B91760FE196AE8BD00078379 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B96FBEB1196C915B007D773C /* retinaIcon10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = retinaIcon10.png; path = Images/retinaIcon10.png; sourceTree = "<group>"; };
+		B96FBEB3196C91EC007D773C /* retinaIcon10 nonRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "retinaIcon10 nonRetina.png"; path = "Images/retinaIcon10 nonRetina.png"; sourceTree = "<group>"; };
 		B99E6C321964BD3B0074DA1F /* XPLRR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XPLRR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B99E6C351964BD3B0074DA1F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B99E6C371964BD3B0074DA1F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -157,6 +161,8 @@
 		B99E6C3C1964BD3B0074DA1F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B96FBEB1196C915B007D773C /* retinaIcon10.png */,
+				B96FBEB3196C91EC007D773C /* retinaIcon10 nonRetina.png */,
 				B99E6C3D1964BD3B0074DA1F /* XPLRR-Info.plist */,
 				B99E6C3E1964BD3B0074DA1F /* InfoPlist.strings */,
 				B99E6C411964BD3B0074DA1F /* main.m */,
@@ -261,6 +267,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B96FBEB4196C91EC007D773C /* retinaIcon10 nonRetina.png in Resources */,
+				B96FBEB2196C915B007D773C /* retinaIcon10.png in Resources */,
 				B99E6C401964BD3B0074DA1F /* InfoPlist.strings in Resources */,
 				B99E6C481964BD3B0074DA1F /* Images.xcassets in Resources */,
 			);
@@ -343,7 +351,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kenneth Friedman (55E2U58P88)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kenneth Friedman (55E2U58P88)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -382,7 +391,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kenneth Friedman (55E2U58P88)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kenneth Friedman (55E2U58P88)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -404,7 +414,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kenneth Friedman (55E2U58P88)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XPLRR/XPLRR-Prefix.pch";
 				INFOPLIST_FILE = "XPLRR/XPLRR-Info.plist";
@@ -418,7 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kenneth Friedman (55E2U58P88)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XPLRR/XPLRR-Prefix.pch";
 				INFOPLIST_FILE = "XPLRR/XPLRR-Info.plist";

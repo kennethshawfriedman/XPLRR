@@ -12,4 +12,7 @@
 @interface InfiniteView : UIScrollView
 
 
+- (void) populateCurrentView;
+
+
 @end

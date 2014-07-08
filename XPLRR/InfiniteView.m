@@ -16,6 +16,7 @@
     if (self) {
         self.backgroundColor = [UIColor blueColor];
 		[self setContentSize: CGSizeMake(2048, 1536)];
+		
     }
     return self;
 }
@@ -23,6 +24,10 @@
 - (void) layoutSubviews {
 	
 	
+	
+}
+
+- (void) populateCurrentView {
 	
 }
 
