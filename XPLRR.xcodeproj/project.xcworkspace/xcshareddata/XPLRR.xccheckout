@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8009DAB0-3886-401E-8867-81E2B823FB2B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>XPLRR</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7F95324D-6DAB-4EDE-86A6-B15B4DB08FCE</key>
+		<string>https://github.com/kennethshawfriedman/XPLRR.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>XPLRR.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7F95324D-6DAB-4EDE-86A6-B15B4DB08FCE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kennethshawfriedman/XPLRR.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7F95324D-6DAB-4EDE-86A6-B15B4DB08FCE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7F95324D-6DAB-4EDE-86A6-B15B4DB08FCE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>XPLRR</string>
+		</dict>
+	</array>
+</dict>
+</plist>
