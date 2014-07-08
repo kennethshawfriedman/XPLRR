@@ -118,12 +118,30 @@
 				 //NSLog(@"%@", [error localizedDescription]);
 			 }
 		 }];
-		
 		_infoView.text = @"";
-		[self dismissViewControllerAnimated:YES completion:nil];
+		[self showBeginButton];
 	} else {
 		_infoView.text = @"XPLRR needs access to your Twitter information. Please go to Settings on your iPad and log into Twitter";
 	}
+}
+
+- (void) showBeginButton {
+	UIButton *beginButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+	[_allowLocation setHidden:YES];
+	[_allowLocation setEnabled:NO];
+	[beginButton addTarget:self action:@selector(dismissVC) forControlEvents:UIControlEventTouchUpInside];
+	[beginButton setTitle:@"Begin" forState:UIControlStateNormal];
+	beginButton.titleLabel.font = [UIFont fontWithName:@"Futura-Medium" size:25.0];
+	beginButton.frame = CGRectMake(120.0, 300.0, 300.0, 50.0);
+	beginButton.alpha = 0.0;
+	[self.view addSubview:beginButton];
+	[UIView animateWithDuration:0.5 animations:^{
+		beginButton.alpha = 1.0;
+	}];
+}
+
+- (void) dismissVC {
+	[self dismissViewControllerAnimated:YES completion:nil];
 }
 
 

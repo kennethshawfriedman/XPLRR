@@ -19,8 +19,13 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         //_iView = [[InfiniteView alloc] initWithFrame:self.view.frame];
+		
     }
     return self;
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
 }
 
 - (void)viewDidLoad {
