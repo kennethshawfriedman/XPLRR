@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
-@interface InfiniteView : UIScrollView
+@interface InfiniteView : UIScrollView <UIScrollViewDelegate>
 
 
 - (void) populateCurrentView;

@@ -23,9 +23,15 @@
 
 - (void) layoutSubviews {
 	
-	
-	
+	//	NSLog(@"%f, %f", self.contentOffset.x, self.contentSize.width);
+//	
+//	if (self.contentOffset.x > self.contentSize.width-1074) {
+//		[self setContentSize:CGSizeMake(self.contentSize.width+1000, self.contentSize.height)];
+//		NSLog(@"MODIFIED");
+//	} else if (self.contentOffset.x < self.con)
+//	
 }
+
 
 - (void) populateCurrentView {
 	
