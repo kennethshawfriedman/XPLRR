@@ -23,6 +23,8 @@
 
 - (void) layoutSubviews {
 	
+	//Called when view is moved. 
+	
 	//	NSLog(@"%f, %f", self.contentOffset.x, self.contentSize.width);
 //	
 //	if (self.contentOffset.x > self.contentSize.width-1074) {
