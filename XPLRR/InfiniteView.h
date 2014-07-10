@@ -15,7 +15,11 @@
 @property (nonatomic, retain) UIView *containerView;
 
 
-- (void) populateCurrentView;
+- (void) recenter;
+
+- (void)tileButtonsFrom:(CGFloat)minimumVisibleX to:(CGFloat)maximumVisibleX;
+
+- (UIButton *) insertButton;
 
 
 @end
