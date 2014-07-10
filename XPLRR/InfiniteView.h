@@ -11,6 +11,9 @@
 
 @interface InfiniteView : UIScrollView <UIScrollViewDelegate>
 
+@property (nonatomic, retain) NSMutableArray *visibleButtons;
+@property (nonatomic, retain) UIView *containerView;
+
 
 - (void) populateCurrentView;
 
