@@ -10,17 +10,14 @@
 #import <CoreLocation/CoreLocation.h>
 #import <Social/Social.h>
 #import <Accounts/Accounts.h>
+#import "XPElements.h"
 
 @interface SetupVC : UIViewController <CLLocationManagerDelegate>
 
 @property (nonatomic, retain) CLLocationManager *locationManager;
 @property (nonatomic, retain) ACAccountStore *acStore;
 
-@property (nonatomic, retain) UILabel *welcomeLabel;
-@property (nonatomic, retain) UILabel *titleLabel;
 @property (nonatomic, retain) UIButton *allowLocation;
-
-@property (nonatomic, retain) UILabel *clickToAllow;
 
 @property (nonatomic, retain) UITextView *infoView;
 
