@@ -40,7 +40,8 @@
 }
 
 - (void) showInfiniteView {
-	_iView = [[InfiniteView alloc] initWithFrame:CGRectMake(0, 0, 1024, 768)];
+	CGRect fullFrame = [self.view bounds];
+	_iView = [[InfiniteView alloc] initWithFrame:fullFrame];
 	[self.view addSubview:_iView];
 }
 

@@ -15,6 +15,9 @@
 @property (nonatomic, retain) UIView *containerView;
 
 
+- (void) reCenter;
+- (void) addContent;
+
 @end
 
 
