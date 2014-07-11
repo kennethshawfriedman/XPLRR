@@ -13,8 +13,9 @@
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        
-		self.contentSize = CGSizeMake(5000, self.frame.size.height);
+		
+		[self setContentSize: CGSizeMake(self.frame.size.width, 5000)];
+		
 		
 		_visibleButtons = [[NSMutableArray alloc] init];
 		_containerView = [[UIView alloc] init];

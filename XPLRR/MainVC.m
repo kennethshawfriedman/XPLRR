@@ -18,7 +18,6 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        //_iView = [[InfiniteView alloc] initWithFrame:self.view.frame];
 		
     }
     return self;
