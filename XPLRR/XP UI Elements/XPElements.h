@@ -11,6 +11,5 @@
 @interface XPElements : NSObject
 
 + (UILabel *) addSetUpLabelOfSize: (float) size atHeight: (float) height withText: (NSString *) text;
-+ (UIButton *) addSetUpButtonAtHeight: (float) height withText: (NSString *) text withSelf: (id) saySelf andSelector: (SEL) selector;
 
 @end
