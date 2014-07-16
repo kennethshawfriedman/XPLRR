@@ -14,6 +14,8 @@
     self = [super initWithFrame:frame];
     if (self) {
 		
+		_offFromCenter = 0.0;
+		
 		[self setContentSize: CGSizeMake(self.bounds.size.width, 5000)];
 		
 		_containerView = [[UIView alloc] init];
@@ -44,7 +46,24 @@
 	CGPoint currentOffset = [self contentOffset];
 	CGFloat contentHeight = [self contentSize].height;
 	CGFloat centerOffsetY = (contentHeight - [self bounds].size.height)/2.0;
-	CGFloat disFromCenterY = fabsf(centerOffsetY-currentOffset.y);
+	CGFloat disFromCenterY = fabsf(currentOffset.y-centerOffsetY);
+	
+//	NSLog(@"%f",disFromCenterY);
+//	NSLog(@"%f\n", (contentHeight/4.0));
+	
+	
+	if (disFromCenterY > (contentHeight / 4.0)) {
+		self.contentOffset = CGPointMake(centerOffsetY, currentOffset.x);
+		_offFromCenter += (centerOffsetY-currentOffset.y);
+		NSLog(@"%f",_offFromCenter);
+		
+		//From streetScroller
+//		for (UILabel *label in self.visibleLabels) {
+//            CGPoint center = [self.labelContainerView convertPoint:label.center toView:self];
+//            center.x += (centerOffsetX - currentOffset.x);
+//            label.center = [self convertPoint:center toView:self.labelContainerView];
+//        }
+	}
 	
 }
 

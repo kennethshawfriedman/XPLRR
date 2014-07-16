@@ -13,6 +13,7 @@
 
 @property (nonatomic, retain) NSMutableArray *visibleButtons;
 @property (nonatomic, retain) UIView *containerView;
+@property (nonatomic) float offFromCenter;
 
 
 - (void) reCenter;
